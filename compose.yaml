@@ -1,0 +1,6 @@
+services:
+  go:
+    build:
+      context: .
+    volumes:
+      - ~/.aws:/home/app/.aws:ro
