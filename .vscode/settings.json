@@ -1,0 +1,8 @@
+{
+    "[yaml]": {
+        "editor.defaultFormatter": "bluebrown.yamlfmt"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "bluebrown.yamlfmt"
+    }
+}
