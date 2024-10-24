@@ -24,7 +24,8 @@ jobs:
       - name: Create release
         uses: softprops/action-gh-release@v2
         with: 
+          fail_on_unmatched_files: true
           files: |
-            yamabiko-linux-amd64
-            yamabiko-windows-amd64
-            yamabiko-darwin-amd64
+            examples/yamabiko/yamabiko-linux-amd64
+            examples/yamabiko/yamabiko-windows-amd64
+            examples/yamabiko/yamabiko-darwin-amd64
