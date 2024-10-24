@@ -26,7 +26,8 @@ USER app
 
 # デバックに必要な golang パッケージのインストール
 RUN go install golang.org/x/tools/gopls@latest && \
-    go install github.com/go-delve/delve/cmd/dlv@latest
+    go install github.com/go-delve/delve/cmd/dlv@latest && \
+    go install github.com/google/yamlfmt/cmd/yamlfmt@latest
 
 # 日本語フォントの設定(app ユーザ)
 RUN echo 'export LANG=ja_JP.utf8' >> ~/.bashrc
