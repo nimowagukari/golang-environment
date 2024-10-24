@@ -25,7 +25,9 @@
 		"vscode": {
 			"extensions": [
 				"golang.Go",
-				"DavidAnson.vscode-markdownlint"
+				"DavidAnson.vscode-markdownlint",
+				"GitHub.vscode-github-actions",
+				"bluebrown.yamlfmt"
 			]
 		}
 	}

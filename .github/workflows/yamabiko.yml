@@ -1,0 +1,29 @@
+name: Generate cli binaries and Release
+on:
+  push:
+    # tags: 
+    #   - examples/yamabiko/v*
+    branches:
+      - test_github_actions
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Setup golang
+        uses: actions/setup-go@v5
+        with:
+          go-version: '~1.21.7'
+      - name: Build binaries
+        run: |
+          GOOS=linux GOARCH=amd64 go build -o yamabiko-linux-amd64
+          GOOS=windows GOARCH=amd64 go build -o yamabiko-windows-amd64
+          GOOS=darwin GOARCH=amd64 go build -o yamabiko-darwin-amd64
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with: 
+          files: |
+            yamabiko-linux-amd64
+            yamabiko-windows-amd64
+            yamabiko-darwin-amd64
