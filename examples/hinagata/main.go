@@ -10,12 +10,6 @@ import (
 	"os"
 )
 
-type Options struct {
-	Host     string
-	Hostname string
-	User     string
-}
-
 func main() {
 	conf, err := parseFlags()
 	if err != nil {
