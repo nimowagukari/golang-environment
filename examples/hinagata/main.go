@@ -59,10 +59,10 @@ func parseFlags() (Config, error) {
 	flag.Parse()
 
 	if host == "" {
-		return Config{}, errors.New("-host option is requred")
+		return Config{}, errors.New("-host option is required")
 	}
 	if hostname == "" {
-		return Config{}, errors.New("-hostname option is requred")
+		return Config{}, errors.New("-hostname option is required")
 	}
 
 	conf := Config{
