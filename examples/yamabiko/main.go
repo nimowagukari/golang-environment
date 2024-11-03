@@ -12,7 +12,6 @@ func main() {
 	fmt.Print(msg)
 }
 
-// TODO: io.Reader を引数にする
 func Yamabiko(stdin io.Reader) string {
 	in, err := io.ReadAll(stdin)
 	if err != nil {
