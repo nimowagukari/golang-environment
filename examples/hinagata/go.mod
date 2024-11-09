@@ -1,3 +1,3 @@
 module github.com/nimowagukari/golang-environment/examples/hinagata
 
-go 1.21.7
+go 1.23.3
