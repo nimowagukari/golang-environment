@@ -2,5 +2,7 @@ services:
   go:
     build:
       context: .
+    command: sleep infinity
     volumes:
       - ~/.aws:/home/app/.aws:ro
+      - ..:/workspaces:cached
