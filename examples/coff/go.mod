@@ -1,3 +1,3 @@
 module github.com/nimowagukari/golang-environment/examples/coff
 
-go 1.23.3
+go 1.25.1
