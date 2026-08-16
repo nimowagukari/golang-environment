@@ -5,4 +5,7 @@
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "bluebrown.yamlfmt"
     },
+    "github.copilot.enable": {
+        "*": false
+    }
 }
