@@ -26,8 +26,7 @@
 				"golang.Go",
 				"DavidAnson.vscode-markdownlint",
 				"GitHub.vscode-github-actions",
-				"bluebrown.yamlfmt",
-				"genieai.chatgpt-vscode"
+				"bluebrown.yamlfmt"
 			]
 		}
 	}
