@@ -5,17 +5,7 @@
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "bluebrown.yamlfmt"
     },
-    // genieai
-    "genieai.openai.model": "gpt-3.5-turbo",
-    "genieai.promptPrefix.customPrompt1-enabled": true,
-    "genieai.promptPrefix.customPrompt1": "次の文章を翻訳してください",
-    "genieai.promptPrefix.adhoc-enabled": false,
-    "genieai.promptPrefix.addTests": "次のコードに対するテストを実装してください",
-    "genieai.promptPrefix.findProblems": "次のコードの問題点を見つけてください",
-    "genieai.promptPrefix.optimize": "次のコードを最適化してください",
-    "genieai.promptPrefix.explain": "次のコードを説明してください",
-    "genieai.promptPrefix.addComments": "次のコードにコメントを追加してください",
-    "genieai.promptPrefix.completeCode": "次のコードを完成させてください",
-    "genieai.openai.temperature": 0.5,
-    "genieai.response.showNotification": true
+    "github.copilot.enable": {
+        "*": false
+    }
 }

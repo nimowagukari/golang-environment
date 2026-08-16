@@ -27,7 +27,7 @@
 				"DavidAnson.vscode-markdownlint",
 				"GitHub.vscode-github-actions",
 				"bluebrown.yamlfmt",
-				"genieai.chatgpt-vscode"
+				"anthropic.claude-code"
 			]
 		}
 	}
