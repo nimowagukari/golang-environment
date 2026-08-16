@@ -3,6 +3,12 @@ services:
     build:
       context: .
     command: sleep infinity
+    environment:
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-ap-northeast-1}
     volumes:
-      - ~/.aws:/home/app/.aws:ro
-      - ..:/workspaces:cached
+      - .:/workspaces/golang-environment:cached
+      - claude_config:/home/golang/.claude
+volumes: 
+  claude_config:

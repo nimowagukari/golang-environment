@@ -26,7 +26,8 @@
 				"golang.Go",
 				"DavidAnson.vscode-markdownlint",
 				"GitHub.vscode-github-actions",
-				"bluebrown.yamlfmt"
+				"bluebrown.yamlfmt",
+				"anthropic.claude-code"
 			]
 		}
 	}
